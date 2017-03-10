@@ -1,0 +1,142 @@
+﻿<UserControl
+    x:Class="RSI_Teach_Interface.RSI_Item"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:RSI_Teach_Interface"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="100"
+    d:DesignWidth="800"
+    BorderBrush="#FF0B0438"
+    mc:Ignorable="d" BorderThickness="3">
+    <Grid Margin="5" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button
+            x:Name="tb_Delete"
+            Grid.Column="5"
+            Width="75"
+            Margin="32,58,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Delete" Click="tb_Delete_Click" />
+        <Button
+            x:Name="tb_edit"
+            Grid.Column="5"
+            Width="75"
+            Height="43"
+            Margin="32,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Edit" />
+        <TextBox
+            x:Name="tb_name"
+            Width="106"
+            Height="70"
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Name"
+            TextWrapping="Wrap" />
+        <ComboBox
+            x:Name="cb_type"
+            Grid.Column="1"
+            Width="112"
+            Margin="10,36,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.536,1.636" />
+        <Label
+            x:Name="label"
+            Grid.Column="1"
+            Margin="43,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="TYPE:" />
+        <CheckBox
+            x:Name="chB_bool"
+            Grid.Column="2"
+            Margin="39,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="True" />
+        <TextBox
+            x:Name="tb_value"
+            Grid.Column="2"
+            Width="110"
+            Height="23"
+            Margin="12,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.627,0.087"
+            Text="Value"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="tb_newValue"
+            Grid.Column="2"
+            Width="110"
+            Height="23"
+            Margin="12,58,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="New Value"
+            TextWrapping="Wrap" />
+        <ComboBox
+            x:Name="cb_recive"
+            Grid.Column="3"
+            Width="111"
+            Margin="10,31,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <TextBox
+            x:Name="tb_newRecive"
+            Grid.Column="3"
+            Width="111"
+            Height="23"
+            Margin="10,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="New Recive"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="bt_setRecive"
+            Grid.Column="3"
+            Width="111"
+            Margin="10,59,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Set Recive" />
+        <ComboBox
+            x:Name="cb_send"
+            Grid.Column="4"
+            Width="111"
+            Margin="11,31,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <TextBox
+            x:Name="tb_newSend"
+            Grid.Column="4"
+            Width="111"
+            Height="23"
+            Margin="11,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="New Send"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="bt_send"
+            Grid.Column="4"
+            Width="111"
+            Margin="11,59,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Set Send" />
+
+    </Grid>
+</UserControl>
